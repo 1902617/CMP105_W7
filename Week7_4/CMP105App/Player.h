@@ -2,6 +2,7 @@
 
 #include "Framework/GameObject.h"
 #include "Bullet.h"
+#include <iostream>
 
 class Player : public GameObject
 {
@@ -13,6 +14,7 @@ public:
 	void update(float dt);
 	Bullet* spawn(sf::Vector2f pos);
 	bool fired() { return hasFired; };
+
 	Bullet* getBullet() {
 		return bullet;
 	};

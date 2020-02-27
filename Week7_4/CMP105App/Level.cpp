@@ -1,4 +1,5 @@
 #include "Level.h"
+#include <iostream>
 
 Level::Level(sf::RenderWindow* hwnd, Input* in)
 {
@@ -31,8 +32,13 @@ void Level::render()
 {
 	beginDraw();
 	window->draw(player);
-	if(player.fired())
+
+	if (player.fired())
+	{
 		window->draw(*player.getBullet());
+		//std::cout << "Test1\n";
+	}
+
 	endDraw();
 }
 

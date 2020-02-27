@@ -11,6 +11,7 @@ public:
 
 	void handleInput(float dt);
 	void update(float dt);
+
 	Companion* getCompanion()
 	{
 		return &companion;

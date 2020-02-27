@@ -2,6 +2,7 @@
 
 #include "Framework/GameObject.h"
 #include "Bullet.h"
+#include <iostream>
 
 class Player : public GameObject
 {
@@ -11,7 +12,10 @@ public:
 
 	void handleInput(float dt);
 	void update(float dt);
-	Bullet* getBullet() {
+
+	Bullet* getBullet()
+	{
+
 		return bullet;
 	};
 
